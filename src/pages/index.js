@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import DonateButton from '../components/donate-button';
+
 
 const IndexPage = () => (
   <Layout>
@@ -13,7 +15,7 @@ const IndexPage = () => (
       are or have been pursuing and/or applying knowledge and/or skill in the construction industry or 
       trades and which maintain merit shop and free market principles.
     </p>
-    <p>Donate button will go here.</p>
+    <DonateButton>Donate Now!</DonateButton>
   </Layout>
 )
 

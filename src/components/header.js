@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled, {css} from "styled-components";
 
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'rebeccapurple',
+      background: '#1a1aff',
     }}
   >
     <div
@@ -31,5 +32,9 @@ const Header = ({ siteTitle }) => (
     </div>
   </div>
 )
+
+const StyledHeader = styled(Header)`
+  background: purple;
+`;
 
 export default Header

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/layout'
+import DonateButton from '../components/donate-button';
 
 const DonatePage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const DonatePage = () => (
       And would you please consider including the ABC Cares Foundation, a 100% tax deductible, 
       IRS 501c(3) organization, in your corporate giving program and fundraising efforts (golf tournaments, etc...).
     </p>
+    <DonateButton>Donate Now!</DonateButton>
   </Layout>
 );
 
