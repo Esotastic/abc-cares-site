@@ -1,40 +1,51 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled, {css} from "styled-components";
+import DonateButton from '../components/donate-button';
+
+const StyledHeader = styled.div`
+  background: #003E7B;
+  h1 {
+    img {
+      height: 100px;
+    }
+  }
+`;
+
+const HeaderContainer = styled.div`
+  margin: 0 auto;
+  maxWidth: 960px;
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+  ${DonateButton} {
+    text-align: center;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+`;
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: '#1a1aff',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ 
-        margin: 0,
-        textAlign: "center"
-      }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
+  <StyledHeader>
+    <HeaderContainer>
+      <h1>
+        <StyledLink to="/">
           {siteTitle}
-        </Link>
+        </StyledLink>
       </h1>
-    </div>
-  </div>
+      <DonateButton>Donate Now!</DonateButton>
+    </HeaderContainer>
+  </StyledHeader>
 )
 
-const StyledHeader = styled(Header)`
-  background: purple;
-`;
+
 
 export default Header

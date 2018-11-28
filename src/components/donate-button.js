@@ -16,8 +16,6 @@ const DonateButton = styled.button`
     `};
 `;
 
-
-
 // const DonateButton = () => {
 //   return (
 //     <div>

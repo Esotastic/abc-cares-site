@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import styled, {css} from "styled-components";
+ 
 import Layout from '../components/layout'
 import DonateButton from '../components/donate-button';
+
+const IndexWrapper = styled.div`
+  height: 100vh;
+  background: blue;
+`;
 
 
 const IndexPage = () => (
@@ -15,7 +21,6 @@ const IndexPage = () => (
       are or have been pursuing and/or applying knowledge and/or skill in the construction industry or 
       trades and which maintain merit shop and free market principles.
     </p>
-    <DonateButton>Donate Now!</DonateButton>
   </Layout>
 )
 
