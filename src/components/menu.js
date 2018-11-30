@@ -11,8 +11,9 @@ const MenuList = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 0;
   li {
-    display: block;
+    
   }
 `;
 

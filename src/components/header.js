@@ -13,6 +13,7 @@ const StyledHeader = styled.div`
 `;
 
 const HeaderContainer = styled.div`
+  font-family: sans-serif;
   margin: 0 auto;
   maxWidth: 960px;
   padding: 1.45rem 1.0875rem;
@@ -38,7 +39,7 @@ const Header = ({ siteTitle }) => (
     <HeaderContainer>
       <h1>
         <StyledLink to="/">
-          {siteTitle}
+          ABC Cares Foundation
         </StyledLink>
       </h1>
       <DonateButton>Donate Now!</DonateButton>
